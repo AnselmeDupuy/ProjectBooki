@@ -1,0 +1,570 @@
+/*intégration de la police "raleway" à tout le texte*/
+*{
+
+    font-family: 'Raleway', sans-serif;
+    max-width: 1400px;
+    max-height: 100%;
+}
+
+
+/* Position de "hébérgements" et "Activité" */
+#navigation /*utilisé des balises class*/
+{
+    display:flex;
+    flex-direction: row;
+    float: right;
+    margin-top: 3.6%;
+    margin-right: 6%;
+}
+
+
+/* mise en place de l'espace entre "hébergement" et "activité"
+mise en place de la bordure bleu au survole du lien */
+.TopTitle1, .TopTitle2
+{
+    
+    color: black;
+    text-decoration: none;
+}
+
+.TopTitle2
+{
+    margin-left: 60%;
+}
+
+
+.TopTitle1:hover, .TopTitle2:hover
+{
+    border-top:solid 2px;
+    padding-top: 35%;
+    border-color: #0065FC;
+    font-weight: 500px;
+    color:#0065FC ;
+}
+
+
+
+/* Position du Logo */
+.LogoBooki
+{
+    margin-top: 3.6%;
+    height: 3%;
+    width: 5%;
+}
+
+/* Application d'une marge sur tout le corp de la page*/
+body
+{
+    margin-left: 5%;
+}
+
+/*modification du texte */
+.PremierTitre
+{
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 5%;
+}
+
+.SecondTitre
+{
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Icones */
+
+.fa-icon
+{
+    color: #0065FC;
+}
+
+.star-grey
+{
+    color:#F2F2F2
+}
+
+
+/*CSS de la barre de recherche*/
+
+.barre-recherche
+{
+    display: flex;   
+    width: 33%;
+    height: 100%;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px; 
+    background-color: #F2F2F2;
+}
+
+.icone-location
+{
+    display:flex;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.search-box
+{
+    display:flex;
+    height: 49px;
+    border: none;
+    font-style: normal;
+    font-size:medium;
+    font-weight: 700;
+    padding-left: 3%;
+    width: 250px;
+}
+
+.search-button
+{
+    display: flex;
+    background-color: #0065FC;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+    padding-right: 4%;
+    padding-left: 4%;
+    height: 100%;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Bouton
+{
+    justify-content: flex-end;
+}
+
+
+/*CSS des filtres*/
+/*Positionement*/
+.Filtres
+{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 70%;
+    height: 5%;
+    margin-top: 2%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.Box
+{
+    display: flex;
+    flex-wrap:nowrap;
+    border: solid 2px #D9D9D9;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.Box:hover
+{
+    background-color: #DEEBFF;
+}
+
+.box-icon
+{
+    margin-left: -7%;
+    padding-left: 2%;
+}
+
+
+/* icone "info" + texte */
+.info-icon
+{
+    display: flex;
+    border: solid 1px #D9D9D9;
+    border-radius:50%;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    margin-right: 1%;    
+}
+
+.info-box
+{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2.3%;
+}
+
+
+/* Hébérgement */
+
+#Hébergement
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color:#F2F2F2;
+    border-radius: 20px;
+    margin-bottom: 30%;
+    float: left;
+    margin-right: 5%;
+}
+
+
+.box-hébergement
+{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;    
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items:flex-start;
+}
+
+
+.Hbox
+{
+    
+    display: flex;
+    flex-direction: column;
+    background-color: white;  
+    width: 30%;
+    border-radius: 20px;
+    padding: 0.6%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 1%;
+    margin-left: 1%;
+    height:100%;
+    text-decoration: none;
+
+    box-shadow:
+    0px 0px 0.4px rgba(0, 0, 0, 0.109),
+    0px 0px 1.3px rgba(0, 0, 0, 0.161),
+    0px 0px 6px rgba(0, 0, 0, 0.27);
+}
+
+
+
+.Himg
+{
+   height: 100px;
+}
+
+.imgmarseille
+{
+    object-fit: cover;
+    width: 100%;
+    border-radius:20px 20px 0px 0px;
+}
+
+.hébergementTitre
+{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    text-decoration: none;
+}
+
+
+
+.Htext
+{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    color: black;
+    height: 90px;
+    padding: 0px;
+}
+
+
+.Htitre
+{
+    margin: 0px;
+}  
+
+.Htext p
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.Hstar
+{
+    margin-top: 13%;
+}
+
+
+
+
+
+/* hébergement populaire*/
+
+.Hébergement-pop
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 35%;
+    background-color:#F2F2F2 ;
+    border-radius: 5%;
+}
+
+
+
+.box-pop
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Pbox
+{
+    display: flex;
+    flex-direction: row;
+    border:  1px white;
+    background-color: white;  
+    border-radius: 20px;
+    padding: 0.8%;
+    width: 85%;
+    margin: 6%;
+    height: 9.6em;
+
+    box-shadow:
+    0px 0px 0.4px rgba(0, 0, 0, 0.109),
+    0px 0px 1.3px rgba(0, 0, 0, 0.161),
+    0px 0px 6px rgba(0, 0, 0, 0.27);
+}
+
+.Pimg
+{
+    width: 35%;
+}
+
+.imgPop
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.Ptitre
+{
+    margin-bottom: -4%;
+
+}
+
+
+.Ptext
+{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    margin-left: 2%;
+    width: 100%;
+    height: 100%;
+    
+    justify-content: flex-start;
+}
+
+.star
+{
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    margin-bottom: 4%;
+}    
+
+
+.PopulaireTitre
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.PopTitre
+{
+    margin-left: 7%;
+}
+
+
+.chart
+{
+    align-self: center;
+    margin-right: 7%;
+}
+
+
+
+
+/* Activité a marseille*/
+
+
+#activité
+{
+    display:flex;
+    float: left;
+    flex-direction:column ;
+    margin-top: -30%;
+    margin-bottom: 7%;
+}
+
+.boxActivité
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Abox
+{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    overflow: hidden;
+    margin-top: 10%;
+    border-radius: 20px;
+
+    box-shadow:
+    0px 0px 0.4px rgba(0, 0, 0, 0.109),
+    0px 0px 1.3px rgba(0, 0, 0, 0.161),
+    0px 0px 6px rgba(0, 0, 0, 0.27);
+}
+
+.Activitétitre
+{
+    margin-top: 5%;
+    margin-bottom: -5%;
+}
+
+.Aimg
+{
+    object-fit: cover;
+    height: 79%;
+    width: 100%;
+}
+
+.Atitre
+{
+    font-weight: 700;
+    margin-left: 5%;
+    margin-bottom: -1%;
+}
+
+
+/*Pied de page*/
+
+#InfoPage
+{
+    display: flex; 
+    width: 100%;
+    margin-left: -1.4%;
+    justify-content: space-evenly;
+    background-color: #F2F2F2;
+}
+
+.infotitre
+{
+    font-weight: 700;
+}
+
+
+/* media querie pour écran tablette */
+@media screen and (max-width: 991px) 
+{
+
+    /* Largeur que prennent les filtres sur l'écran */
+    .Filtres
+    {
+        width: 95%;
+    }
+
+    /* largeur de la barre de recherche*/
+    .barre-recherche
+    {
+        width: 50%;
+    }
+
+    /* largeur de la boite "hébergement" et plus de float */
+    #Hébergement
+    {
+        width: 95%;
+        float: none;    
+    }
+
+
+    .Hébergement-pop
+    {
+        margin-top: -20%;
+        width: 95%;
+        height: 50%;
+    }
+
+    .box-pop
+    {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .Pbox
+    {
+        margin: 3%;
+    }
+
+    .Pimg
+    {
+        width: 50%;
+    }
+
+
+
+    #activité
+    {
+        margin-top: 0%;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/* media querie pour écran téléphone*/
+@media screen and (max-width: 767px)
+{
+/*
+    #navigation
+    {
+       
+    }
+
+    .TopTitle1, .TopTitle2
+    {
+       
+    }
+
+*/
+}
