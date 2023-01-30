@@ -13,6 +13,10 @@
         <title>www.Booki.com</title>
         <!--Intégration fichier CSS-->
         <link rel="stylesheet" href="../CSS/css.css" />
+
+        <!--mise en place du "viewport" pour le mediaquerie vers mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         
 
     </head>
@@ -26,8 +30,9 @@
         <header>
 
             <!--Logo du site-->
-            <img class="LogoBooki" src="../Images/Images Booki/logo/Booki.png" alt="LogoBooki"/>
-
+            <div class="logo">
+                <img class="LogoBooki" src="../Images/Images Booki/logo/Booki.png" alt="LogoBooki"/>
+            </div>
             <nav id="navigation">
                 <!--menu navigation, contient Hébergement et activité-->
                 <div><a class="TopTitle1" href="#Hébergement">Hébergements</a></div>
@@ -45,12 +50,12 @@
         
                 <div class="icone-location">
                     
-                    <i class="fa-solid fa-location-dot"></i>
+                    <i class="fa-solid fa-location-dot fa-nm"></i>
+                    <i class="fa-solid fa-location-dot fa-xl"></i>
 
                 </div>
         
                 <div>
-                    
                         <form method="get" action="">
                         <input class="search-box" type="text" placeholder="Marseille, France">
                         </form>
@@ -58,50 +63,52 @@
 
                 <div>
                     <button class="search-button">
-                        Rechercher
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                        <p class="searchtext">Rechercher</p>
                     </button>
-                </div>
-                            
-                        
-                            
+                </div>                
                     
             </div>
 
 
             <div class="Filtres">
+
+                
                 <h2>Filtres</h2>
-          
-                <div class="Box">
+                
+                <div class="filtre-box">
+                    <div class="Box">
 
-                    <div class="box-icon">
-                        <i class="fa-solid fa-money-bill-wave fa-icon"></i>
+                        <div class="box-icon">
+                            <i class="fa-solid fa-money-bill-wave fa-icon"></i>
+                        </div>
+                        <p>Économique</p>
+
                     </div>
-                    <p>Économique</p>
+                
+                    <div class="Box">
 
-                </div>
-            
-                <div class="Box">
-
-                    <div class="box-icon">
-                        <i class="fa-solid fa-person fa-icon"></i>
+                        <div class="box-icon">
+                            <i class="fa-solid fa-person fa-lg fa-icon"></i>
+                        </div>
+                        <p>Familial</p>
                     </div>
-                    <p>Familial</p>
-                </div>
-            
-                <div class="Box">
+                
+                    <div class="Box">
 
-                    <div class="box-icon">
-                        <i class="fa-solid fa-heart fa-icon"></i>
+                        <div class="box-icon">
+                            <i class="fa-solid fa-heart fa-icon"></i>
+                        </div>
+                        <p>Romantique</p>
                     </div>
-                    <p>Romantique</p>
-                </div>
-            
-                <div class="Box">
+                
+                    <div class="Box">
 
-                    <div class="box-icon">
-                        <i class="fa-solid fa-dog fa-icon"></i>
+                        <div class="box-icon">
+                            <i class="fa-solid fa-dog fa-icon"></i>
+                        </div>
+                        <p>Animaux autorisés</p>
                     </div>
-                    <p>Animaux autorisé</p>
                 </div>
             </div>
 
@@ -125,7 +132,7 @@
 
         <main>
 
-            <section>
+            <section class="section">
                     <!--Hébergement-->
 
                     <div id="Hébergement">
@@ -284,7 +291,7 @@
                         </div>
 
                     </div> <!--fin div populaire-->
-
+            </section> 
 
                 <!--Activité à marseille-->
                 <div id="activité">
@@ -317,7 +324,7 @@
 
                 </div>
 
-            </section>        
+                   
     
         </main>
 
