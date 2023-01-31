@@ -476,7 +476,7 @@ body
 .Aimg
 {
     object-fit: cover;
-    height: 79%;
+    height: 82%;
     width: 100%;
 }
 
@@ -484,7 +484,6 @@ body
 {
     font-weight: 700;
     margin-left: 5%;
-    margin-bottom: -1%;
 }
 
 
@@ -495,13 +494,23 @@ body
     display: flex; 
     width: 100%;
     margin-left: -1.4%;
-    justify-content: space-evenly;
     background-color: #F2F2F2;
 }
 
 .infotitre
 {
     font-weight: 700;
+}
+
+.Apropo
+{
+    margin-left: 3%;
+    padding-right: 15%;
+}
+
+.infotitre
+{
+    font-size: medium;
 }
 
 
@@ -567,11 +576,14 @@ body
 /* media querie pour écran téléphone*/
 @media screen and (max-width: 767px)
 {
+
     body
     {
-        width: 100%;
+        margin-left: 0%;
         margin: 0%;
     }
+
+    /* Modification logo*/
 
     .LogoBooki
     {
@@ -584,10 +596,7 @@ body
         text-align: center;
     }
 
-    .PremierTitre
-    {
-        margin-top: 15%;
-    }
+    /* Changement sur le menu navigation */
 
     #navigation
     {
@@ -615,6 +624,17 @@ body
         border-width: thick;
     }
 
+    .PremierTitre
+    {
+        margin-top: 15%;
+        margin-left: 2%;
+    }
+
+    .SecondTitre
+    {
+        margin-left: 2%;
+    }
+
 
     .fa-nm 
     {
@@ -626,26 +646,29 @@ body
         display: contents;
     }
 
+    /* Barre de recherche*/
+
     .barre-recherche
     {
-        width: 100%;
-        justify-content: space-evenly;
-
+        margin-top: 5%;
+        margin-left: 10%;
     }
 
     .search-box
     {
         height: 80px;
+        width: 400px;
     }
 
     .icone-location
     {
+        width: 40px;
     }
 
 
     .search-button
     {
-       
+       width: 50px;
     }
     
     .searchtext
@@ -657,6 +680,8 @@ body
     {
        display: contents;
     }
+
+    /*Filtres*/
 
     .Filtres
     {
@@ -694,19 +719,60 @@ body
         margin-left: -80%;
     }
 
+
+        /* Hébergement*/
+
     #Hébergement
     {
        margin-top: 10%;
+       margin-left: 2%;
        width: 100%;
        border: none;
        background-color: white;
+       margin-bottom: -2%;
     }
 
     .box-hébergement
     {
         flex-direction: column;
         width: 100%;
+        margin-left: 0%;
     }
+
+    .hébergementTitre
+    {
+        margin-left: 0%;
+    }
+
+    .Hbox
+    {
+        width: 90%;
+    }
+
+    .Htext
+    {
+        margin-top: 1%;
+        font-size: large;
+    }
+
+    .Himg
+    {
+        width: 100%;
+        height: 230px;
+    }
+    
+    .Hstar
+    {
+        margin-top: 2%;
+    }
+
+    .Hfin
+    {
+        display: none;
+    }
+
+
+    /* Hébergement Populaire*/
 
     .Hébergement-pop
     {
@@ -720,7 +786,6 @@ body
         flex-direction: column;
         width: 100%;
         margin-left: 0%;
-        height: 0%;
     }
 
     .Pimg
@@ -733,10 +798,61 @@ body
         font-size: medium;
     }
 
+    /* inversion hébergement et hébergement populaire*/
+
     .section
     {
         display: flex;
         flex-direction: column-reverse;
     }
+
+    /* Activité à Marseille*/
+
+    #activité
+    {
+        margin-left: 3%;
+        width: 100%;
+    }
+
+    .boxActivité
+    {
+        flex-direction: column;
+    }
+
+    .Abox
+    {
+        width: 90%;
+    }
+
+    .Aimg
+    {
+        height: 230px;
+        width: 100%;
+    }
+ 
+
+
+
+
+
+    /* Footer*/
+
+    #InfoPage
+    {
+        width: 100%;
+        margin-left: 0%;
+        flex-direction: column;
+    }
+
+    .Apropo
+    {
+        margin-left: 2%;
+        padding-right: 0%;
+        padding-bottom: 2%;
+        font-size:larger ;
+    }
+
+
+
 
 }
