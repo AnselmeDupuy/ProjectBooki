@@ -579,7 +579,6 @@ body
 
     body
     {
-        margin-left: 0%;
         margin: 0%;
     }
 
@@ -604,15 +603,15 @@ body
         padding-right: 5%;
         margin-top: 7%;
         justify-content: space-evenly;
+        border-bottom: solid 2px #F2F2F2;
+        padding-bottom: 2.5%;
+        border-width: thick;
     }
 
     .TopTitle1, .TopTitle2
     {
         font-size:xx-large;
         margin-left: 0%;
-        border-bottom: solid 2px #F2F2F2;
-        padding-bottom: 20px;
-        border-width: thick;
     }
 
     .TopTitle1:hover, .TopTitle2:hover
@@ -651,24 +650,43 @@ body
     .barre-recherche
     {
         margin-top: 5%;
-        margin-left: 10%;
+        margin-left: 6%;
+        width: 90%;
+        justify-content: space-evenly;
+        border-radius: 25px;
     }
 
     .search-box
     {
         height: 80px;
-        width: 400px;
+        width: 100%;
+        font-size: xx-large;
+        text-decoration: black;
+        font-weight: bolder;
+    }
+
+    .Rbox
+    {
+        width: 80%;
     }
 
     .icone-location
     {
-        width: 40px;
+        width: 15%;
+        padding: 0%;
+        margin: 0%;
     }
 
 
     .search-button
     {
-       width: 50px;
+        width: 100%;
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    .RButton
+    {
+        width: 15%;
     }
     
     .searchtext
@@ -786,6 +804,7 @@ body
         flex-direction: column;
         width: 100%;
         margin-left: 0%;
+
     }
 
     .Pimg
