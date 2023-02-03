@@ -49,7 +49,7 @@ mise en place de la bordure bleu au survole du lien */
 {
     border-top:solid 2px #0065FC;
     padding-top: 35%;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 
@@ -99,10 +99,7 @@ body
     justify-content: stretch;
 }
 
-.fa-xl
-{
-    display: none;
-}
+
 
 .icone-location
 {
@@ -142,16 +139,17 @@ body
     justify-content: center;
 }
 
-.searchtext
-{
-    padding: 0%;
-    margin: 0%;
-}
-
-.fa-magnifying-glass
+.M-RButton
 {
     display: none;
 }
+
+.fa-xl
+{
+    display: none;
+}
+
+
 
 
 /*CSS des filtres*/
@@ -355,7 +353,6 @@ body
 {
     display: flex;
     flex-direction: row;
-    border:  1px white;
     background-color: white;  
     border-radius: 20px;
     padding: 0.8%;
@@ -476,14 +473,16 @@ body
 .Aimg
 {
     object-fit: cover;
-    height: 82%;
+    height: 87%;
     width: 100%;
 }
 
 .Atitre
 {
-    font-weight: 700;
+    font-size: medium;
+    font-weight: bold;
     margin-left: 5%;
+    margin-top: 2%;
 }
 
 
@@ -580,6 +579,7 @@ body
     body
     {
         margin: 0%;
+        width: 102%;
     }
 
     /* Modification logo*/
@@ -600,27 +600,41 @@ body
     #navigation
     {
         width: 100%;
-        padding-right: 5%;
         margin-top: 7%;
         justify-content: space-evenly;
-        border-bottom: solid 2px #F2F2F2;
-        padding-bottom: 2.5%;
-        border-width: thick;
     }
 
     .TopTitle1, .TopTitle2
     {
-        font-size:xx-large;
+        font-size:large;
         margin-left: 0%;
+        margin-right: 0%;
+        font-weight: bold;
+    }
+
+    .test
+    {
+        padding-left: 15%;
+        padding-right: 15%;
+        border-bottom: solid 2px #F2F2F2;
+        border-width: thick;
+        padding-bottom: 9%;
+    
+    }
+  
+
+    .test:hover
+    {
+        padding-top: 0%;
+        padding-bottom: 9%;
+        border-bottom: solid 2px #0065FC;
+        border-width: thick;
+        
     }
 
     .TopTitle1:hover, .TopTitle2:hover
     {
-        padding-top: 0%;
-        padding-bottom: 10%;
-        border-top:none;
-        border-bottom: solid 2px #0065FC;
-        border-width: thick;
+        border: none;
     }
 
     .PremierTitre
@@ -680,19 +694,21 @@ body
 
     .search-button
     {
-        width: 100%;
+        width: 15%;
         border-radius: 0px 25px 25px 0px;
+        height: 80px;
     }
 
     .RButton
     {
-        width: 15%;
-    }
-    
-    .searchtext
-    {
         display: none;
     }
+
+    .M-RButton
+    {
+        display: contents;
+    }
+    
 
     .fa-magnifying-glass
     {
@@ -727,14 +743,16 @@ body
         
     }
 
-    .filtre-box p
-    {
-
-    }
-
     .Filtres h2
     {
         margin-left: -80%;
+    }
+
+    /* texte et icone d'info*/
+    .info-box
+    {
+        margin-left: 3%;
+        margin-bottom: 3%;
     }
 
 
@@ -743,7 +761,7 @@ body
     #Hébergement
     {
        margin-top: 10%;
-       margin-left: 2%;
+       margin-left: 4%;
        width: 100%;
        border: none;
        background-color: white;
@@ -797,6 +815,7 @@ body
         margin-top: 0%;
         width: 100%;
         border-radius: 0%;
+        padding-bottom: 3%;
     }
 
     .box-pop
@@ -804,7 +823,7 @@ body
         flex-direction: column;
         width: 100%;
         margin-left: 0%;
-
+        margin-left: 2%;
     }
 
     .Pimg
@@ -829,8 +848,8 @@ body
 
     #activité
     {
-        margin-left: 3%;
         width: 100%;
+        margin-left: 5%;
     }
 
     .boxActivité
@@ -865,10 +884,11 @@ body
 
     .Apropo
     {
-        margin-left: 2%;
+        margin-left: 4%;
         padding-right: 0%;
         padding-bottom: 2%;
         font-size:larger ;
+
     }
 
 
