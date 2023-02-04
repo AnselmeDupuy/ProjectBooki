@@ -4,6 +4,7 @@
     font-family: 'Raleway', sans-serif;
     max-width: 1400px;
     max-height: 100%;
+    box-sizing:border-box;
 }
 
 /* Position du Logo */
@@ -34,22 +35,23 @@
 mise en place de la bordure bleu au survole du lien */
 .TopTitle1, .TopTitle2
 {
-    
     color: black;
     text-decoration: none;
 }
 
-.TopTitle2
+
+.nav
 {
-    margin-left: 60%;
+    padding-bottom: 0%;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 4%;
+    margin-top: -1%;
 }
 
-
-.TopTitle1:hover, .TopTitle2:hover
+.nav:hover
 {
-    border-top:solid 2px #0065FC;
-    padding-top: 35%;
-    font-weight: 500;
+    border-top: solid #0065FC;
 }
 
 
@@ -137,6 +139,11 @@ body
     width: 150px;
     align-items: center;
     justify-content: center;
+}
+
+.Rbox
+{
+
 }
 
 .M-RButton
@@ -612,30 +619,23 @@ body
         font-weight: bold;
     }
 
-    .test
+    .nav
     {
         padding-left: 15%;
         padding-right: 15%;
         border-bottom: solid 2px #F2F2F2;
         border-width: thick;
         padding-bottom: 9%;
-    
     }
   
 
-    .test:hover
+    .nav:hover
     {
-        padding-top: 0%;
-        padding-bottom: 9%;
         border-bottom: solid 2px #0065FC;
         border-width: thick;
-        
+        border-top: none;        
     }
 
-    .TopTitle1:hover, .TopTitle2:hover
-    {
-        border: none;
-    }
 
     .PremierTitre
     {
