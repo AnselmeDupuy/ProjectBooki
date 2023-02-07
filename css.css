@@ -144,10 +144,6 @@ body
     justify-content: center;
 }
 
-.Rbox
-{
-
-}
 
 .M-RButton
 {
@@ -585,6 +581,10 @@ body
 /* media querie pour écran téléphone*/
 @media screen and (max-width: 767px)
 {
+    *
+    {
+
+    }
 
     body
     {
