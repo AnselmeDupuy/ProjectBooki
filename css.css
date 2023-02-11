@@ -339,7 +339,7 @@ body
 {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 34%;
     background-color:#F2F2F2 ;
     border-radius: 5%;
 }
@@ -581,15 +581,12 @@ body
 /* media querie pour écran téléphone*/
 @media screen and (max-width: 767px)
 {
-    *
-    {
 
-    }
 
     body
     {
-        margin: 0%;
-        width: 100%;
+        margin-left: 0%;
+        width:max-content;
     }
 
     /* Modification logo*/
@@ -743,7 +740,6 @@ body
     {
         margin: 0%;
         padding-right: 4%;
-        
     }
 
     .Filtres h2
@@ -765,7 +761,7 @@ body
     {
        margin-top: 10%;
        margin-left: 4%;
-       width: 100%;
+       width: 90%;
        border: none;
        background-color: white;
        margin-bottom: -2%;
@@ -785,7 +781,7 @@ body
 
     .Hbox
     {
-        width: 90%;
+        width: 100%;
     }
 
     .Htext
@@ -826,7 +822,6 @@ body
         flex-direction: column;
         width: 100%;
         margin-left: 0%;
-        margin-left: 2%;
     }
 
     .Pimg
@@ -851,7 +846,7 @@ body
 
     #activité
     {
-        width: 100%;
+        width: 90%;
         margin-left: 5%;
     }
 
@@ -862,7 +857,7 @@ body
 
     .Abox
     {
-        width: 90%;
+        width: 100%;
     }
 
     .Aimg
@@ -870,8 +865,6 @@ body
         height: 230px;
         width: 100%;
     }
- 
-
 
 
 
@@ -891,7 +884,6 @@ body
         padding-right: 0%;
         padding-bottom: 2%;
         font-size:larger ;
-
     }
 
 
